@@ -1,0 +1,28 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Box</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list>
+        <button ion-item *ngFor="let item of shops" (click)="presentPopover($event,item)">
+            <img  item-start class='img1' width="35px" height="35px" src="../assets/imgs/p.png" />
+            <div class='shop'>
+              <div style='font-size: 17px;'>{{item.name}}</div>
+              <div style='margin-top:10px;'>
+                  <img  class='img1' width="12px" height="12px" src="../assets/imgs/light.png" />
+                  borrow&nbsp;{{item.freeBank}} &nbsp;&nbsp;&nbsp;
+                  <img  class='img1' width="12px" height="12px" src="../assets/imgs/box.png" />
+                  rent&nbsp;{{item.freeSlot}}个
+
+              </div>
+            </div>
+            <span item-end class='km'>{{item.distance}}km</span>
+          </button>
+      </ion-list>
+</ion-content>

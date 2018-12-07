@@ -1,14 +1,52 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Home
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content padding >
+  <div class="login-content">
+  <ion-row id="row1">
+      <ion-col col-12>
+    <ion-img item-start class='img1' width="26px" height="26px" src="../assets/imgs/home_row1_left.png"></ion-img>
+    Normal User
+    <button ion-button  class='btn3' (click)='logout()' >Logout</button> 
+     </ion-col>
+    </ion-row>
+        <ion-row>
+          <ion-col col-6>
+            <div class=row2>
+                <div class='row2_div'><ion-img class='img' width="26px" height="26px" src="../assets/imgs/coin.png"></ion-img></div>
+             <div class='row2_div' style="margin-top:10px;">Free</div>
+            </div>
+          </ion-col>
+          <ion-col col-6>
+            <div class=row2>
+                <div class='row2_div'><ion-img class='img' width="26px" height="26px" src="../assets/imgs/wallet.png"></ion-img></div>
+                <div class='row2_div' style="margin-top:10px; margin-left:25%" >4 hours/time</div>
+            </div>
+          </ion-col>
+        </ion-row>
+  <ion-row class="logo-row"> <ion-col col-12>Payment Account：</ion-col> </ion-row>
+  <ion-row>
+      <ion-col>
+            <button ion-button  class='btn'  >Credit Card</button> 
+            <button ion-button  class='btn' >Select Coupon</button>
+      </ion-col>
+  </ion-row>
+  <ion-row class="row_last2">
+      <ion-col col-12>Price：</ion-col>
+      <ion-col col-12>1 AUD/Hour；</ion-col>
+          <ion-col col-12>*Deposit: 30 AUD</ion-col>
+  </ion-row>
+  <ion-row class="row_last" >
+      <ion-col col-12>
+      <ion-img class='img1' width="26px" height="26px" src="../assets/imgs/home_bottom_1.png" (click)='call()'></ion-img>
+      <button ion-button round class='btn_last' >Borrow</button>
+      <ion-img class='img1' width="26px" height="26px" src="../assets/imgs/home_bottom_2.png" (click)='navigate()'></ion-img>
+    </ion-col>
+    </ion-row>
+</div>
 </ion-content>

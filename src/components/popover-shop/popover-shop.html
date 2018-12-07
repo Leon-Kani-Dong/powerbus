@@ -1,0 +1,18 @@
+<!-- Generated template for the PopoverShopComponent component -->
+<div class='popover'>
+    <ion-item no-lines >
+        <img  item-start class='img1' width="35px" height="35px" src="../assets/imgs/p.png" />
+        <div class='shop'>
+          <div style='font-size: 17px;'>{{item.name}}</div>
+          <div><img  class='img1' width="12px" height="12px" src="../assets/imgs/clock.png" />&nbsp;{{item.open_time}}</div>
+          <div><img  class='img1' width="12px" height="12px" src="../assets/imgs/address.png" />&nbsp;{{item.address}}</div>
+          <div style='margin-top:10px;'>
+              <img  class='img1' width="12px" height="12px" src="../assets/imgs/light.png" />
+              可租借{{item.freeBank}}个 &nbsp;&nbsp;&nbsp;
+              <img  class='img1' width="12px" height="12px" src="../assets/imgs/box.png" />
+            可归还{{item.freeSlot}}个
+          </div>
+        </div>
+        <span item-end class='km'>{{item.distance}}公里</span>
+      </ion-item>
+</div>
